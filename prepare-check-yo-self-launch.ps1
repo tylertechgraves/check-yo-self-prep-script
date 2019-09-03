@@ -5,7 +5,7 @@ $LOCAL_NUGET_PACKAGE_SOURCE_DIRECTORY="~/.nuget/NuGet/local-nuget-package-source
 Set-Location ../check-yo-self-indexer/check-yo-self-indexer-SDK/build-scripts
 pwsh ./packNugets.ps1
 # Copy SDK NuGet to the local package source folder
-cp -f ../nupkg/*.nupkg $LOCAL_NUGET_PACKAGE_SOURCE_DIRECTORY
+Copy-Item -Force ../nupkg/*.nupkg $LOCAL_NUGET_PACKAGE_SOURCE_DIRECTORY
 
 Set-Location ../../
 
@@ -13,7 +13,7 @@ Set-Location ../../
 Set-Location ../check-yo-self-api/check-yo-self-api-SDK/build-scripts
 pwsh ./packNugets.ps1
 # Copy SDK NuGet to the local package source folder
-cp -f ../nupkg/*.nupkg $LOCAL_NUGET_PACKAGE_SOURCE_DIRECTORY
+Copy-Item -Force ../nupkg/*.nupkg $LOCAL_NUGET_PACKAGE_SOURCE_DIRECTORY
 
 Set-Location ../../
 

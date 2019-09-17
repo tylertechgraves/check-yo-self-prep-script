@@ -27,6 +27,7 @@ application on your machine, `you should install the following prerequisites:`
 4. [Visual Studio Code](https://code.visualstudio.com/download)
 5. [NodeJS LTS Version](https://nodejs.org/en/download/)
 6. [Omnisharp Extension for Visual Studio Code (install within Visual Studio Code)](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
+7. [PowerShell 6](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-6)
 
 All source code for this project can be found in the following GitHub repos:
 

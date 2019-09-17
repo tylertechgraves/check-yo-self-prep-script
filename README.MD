@@ -48,6 +48,15 @@ check-yo-self on your machine within a Docker environment.
 Running the script is simple.
 
 First, clone all the GitHub repos listed above into the same folder on your machine.
+Make sure to use the repo names as the folder names into which you clone
+the code.  So it should look something like this when you're done:
+
+check-yo-self-repos/
+├── check-yo-self/
+├── check-yo-self-api/
+├── check-yo-self-bootstrapper/
+├── check-yo-self-indexer/
+└── check-yo-self-prep-script/
 
 Next, select one of the two available scripts. There is a PowerShell version
 and a bash shell version. Depending on your OS, you will likely want to choose

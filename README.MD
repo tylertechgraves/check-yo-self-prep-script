@@ -51,11 +51,11 @@ First, clone all the GitHub repos listed above into the same folder on your mach
 Make sure to use the repo names as the folder names into which you clone
 the code.  So it should look something like this when you're done:
 
-check-yo-self-repos/
-├── check-yo-self/
-├── check-yo-self-api/
-├── check-yo-self-bootstrapper/
-├── check-yo-self-indexer/
+check-yo-self-repos/</br>
+├── check-yo-self/</br>
+├── check-yo-self-api/</br>
+├── check-yo-self-bootstrapper/</br>
+├── check-yo-self-indexer/</br>
 └── check-yo-self-prep-script/
 
 Next, select one of the two available scripts. There is a PowerShell version

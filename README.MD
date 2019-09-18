@@ -37,8 +37,35 @@ All source code for this project can be found in the following GitHub repos:
 4. [check-yo-self-indexer](https://github.com/tylertechgraves/check-yo-self-indexer)
 5. [check-yo-self-bootstrapper](https://github.com/tylertechgraves/check-yo-self-bootstrapper)
 
+### Creating a local NuGet package feed
+
 Finally, you will need to set up a local NuGet package feed.
-[Use these instructions to accomplish this task.](https://docs.microsoft.com/en-us/nuget/hosting-packages/local-feeds)
+The instructions Microsoft provides aren't the best, but here they are:
+
+https://docs.microsoft.com/en-us/nuget/hosting-packages/local-feeds
+
+Or you can just do what I tell you.  That seems easiest, doesn't it?
+
+On a Windows machine, you'll need to create a folder and share it.
+That will result in a UNC path that looks something like this:
+
+`\\<your machine name>\<some path>`
+
+On other operating systems (MacOS & Linux), just create a folder and note its name.
+
+Finally, run the following command to add this source to your machine's
+global NuGet configuration file (NuGet.Config):
+
+```bash
+nuget sources Add -Name "LocalNuGetPackageFeed" -Source <folder/UNC path you created above>
+```
+
+If you want to update the config XML yourself without using the command above,
+you can find your global NuGet.Config file in the following locations:
+
+Windows: %appdata%\NuGet\NuGet.Config
+
+Mac/Linux: ~/.config/NuGet/NuGet.Config or ~/.nuget/NuGet/NuGet.Config (varies by OS distribution)
 
 ### Using the prepare-check-yo-self-launch script
 

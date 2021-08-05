@@ -1,6 +1,7 @@
 #!/bin/bash
 
-LOCAL_NUGET_PACKAGE_SOURCE_DIRECTORY="$HOME/.nuget/NuGet/local-nuget-package-source"
+LOCAL_NUGET_PACKAGE_SOURCE_DIRECTORY="$HOME/.nuget/local-nuget-package-source"
+echo "Local package nuget source location: $LOCAL_NUGET_PACKAGE_SOURCE_DIRECTORY"
 
 # Let's start with our dependencies (NuGets)
 # Create indexer SDK NuGet
@@ -27,8 +28,9 @@ cd ../check-yo-self-indexer || exit
 cd ../check-yo-self-api || exit
 ./dockerize.sh
 # Create front-end/BFF app Docker image
-cd ../check-yo-self || exit
+cd ../check-yo-self/ClientApp || exit
 npm i
+cd ..
 ./dockerize.sh
 # Create bootstrapper Docker image
 cd ../check-yo-self-bootstrapper || exit

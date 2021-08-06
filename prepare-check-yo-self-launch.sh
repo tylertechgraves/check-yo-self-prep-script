@@ -28,9 +28,7 @@ cd ../check-yo-self-indexer || exit
 cd ../check-yo-self-api || exit
 ./dockerize.sh
 # Create front-end/BFF app Docker image
-cd ../check-yo-self/ClientApp || exit
-npm i
-cd ..
+cd ../check-yo-self || exit
 ./dockerize.sh
 # Create bootstrapper Docker image
 cd ../check-yo-self-bootstrapper || exit
